@@ -74,7 +74,7 @@ $(document).ready(function() {
       $ ('#keanuReeves').hide();
       $ ('#someone1').hide();
     }
-    else {
+    else if (age < 30 && gender==='female' && genre==='action'){
       $ ('#someone3').show();
       $ ('#charlieDay').hide();
       $ ('#michaelCera').hide();
@@ -83,6 +83,8 @@ $(document).ready(function() {
       $ ('#keanuReeves').hide();
       $ ('#someone1').hide();
       $ ('#someone2').hide();
+    } else {
+      alert('Please enter your age.');
     }
     event.preventDefault();
   });
